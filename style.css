@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Zen+Antique&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.neutral {
+  color: black;
+}
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+  text-decoration: underline;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: auto;
+  width: 60%;
+  height: 80%;
+  background-color: rgb(255, 228, 203);
+  padding: 2rem 4rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 5px 6px rgb(80, 80, 80);
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+
+.displays {
+  width: 30%;
+  min-height: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+
+.type-display {
+  width: 100%;
+  height: 30%;
+  font-size: 4rem;
+  font-weight: bold;
+  color: black;
+  margin: auto;
+}
+
+.type-input {
+  width: 100%;
+  height: 60%;
+  border: 2px solid black;
+  outline: none;
+  resize: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 4rem;
+  background-color: rgb(254, 243, 233);
+}
+
+.count-display {
+  width: 100%;
+  height: 10%;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.img-display {
+  width: 100%;
+  height: 90%;
+  margin: auto;
+}
+
+.img-display img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Media Query for smaller screens (e.g., phones) */
+@media (max-width: 768px) {
+
+  body {
+    flex-direction: column;
+    height: 100%;
+    overflow: scroll;
+  }
+  .container,
+  .displays {
+    width: 90%;
+    margin: 0.5rem;
+    position: relative;
+    margin: auto;
+    right: 0;
+    left: 0;
+  }
+  .displays {
+    height: 30%;
+  }
+  .container {
+    height: 60%;
+    padding: 1rem;
+  }
+
+  .type-display {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+  }
+  .type-input {
+    padding: 0.1rem 0.2rem;
+    font-size: 2rem;
+    min-height: 4rem;
+    padding: 0.5rem;
+    margin: 1rem 0;
+  }
+
+  .count-display {
+    font-size: 2rem;
+  }
+
+  .img-display img {
+    max-width: 350px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+}
