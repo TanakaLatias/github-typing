@@ -85,7 +85,7 @@ function RenderRandomWord(n) {
     const word = randomWords[index];
     const image = randomImages[index];
 
-    imgElement.src = congrats;
+    imgElement.src = image;
 
     typeDisplay.innerText = "";
     typeInput.focus();
